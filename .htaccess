@@ -1,5 +1,7 @@
-Options +FollowSymlinks
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !index.php
-RewriteCond %{QUERY_STRING} callback=(.+)
-RewriteRule ^(.*) /index.php/?u=$1 [NC,QSA,L]
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine on
+  RewriteCond %{REQUEST_URI} !index.php
+  RewriteCond %{QUERY_STRING} callback=(.+)
+  RewriteRule ^(.*) /index.php/?u=$1 [NC,QSA,L]
+</IfModule>
