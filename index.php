@@ -99,7 +99,7 @@ dispatch('/pong', 'pong');
     $randomNumber = rand(0, getrandmax());
     $pong = $randomNumber % 2;
 
-    return js($callback . '({ "result": "' . $pong . '" })');
+    return js($callback . '({ "result": ' . $pong . ' })');
   }
 
 // Run the application
