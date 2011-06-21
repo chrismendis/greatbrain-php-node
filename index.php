@@ -74,7 +74,7 @@ dispatch('/generate', 'generate');
     // Get a directory listing of the images directory, just like using `ls`
     $images = scandir($imagesDirectory, 1);
     $images = array_slice($images, 0, sizeof($images) - 2);
-    $image = option("host_name") . option("public_path") . "img/" . $images[array_rand($images)];
+    $image = "<img src='" . option("host_name") . option("public_path") . "img/" . $images[array_rand($images)] . "' />";
     return js($callback . '({ "result": "' . $image . '" })');
   }
 
