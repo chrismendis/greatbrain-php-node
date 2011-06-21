@@ -5,7 +5,8 @@
 /**
  *  greatbrain-php-node
  * 
- *  A template 
+ *  A template for making nodes for The Great Brain using PHP.
+ *  Makes use of the Sinatra-like PHP micro-framework, Limonade.
  * 
  *  Code repository: {@link https://github.com/chrismendis/greatbrain-php-node}
  *  
